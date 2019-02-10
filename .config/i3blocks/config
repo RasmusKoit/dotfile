@@ -1,0 +1,67 @@
+# Music
+
+[mediaplayer]
+command=$SCRIPT_DIR/mediaplayer
+instance=spotify
+interval=5
+signal=10
+label=||
+
+# Interaces
+[wifi]
+command=$SCRIPT_DIR/wifi
+label=wifi:
+instance=wlp3s0
+interval=10
+
+[iface wifi]
+command=$SCRIPT_DIR/iface
+label=wlp3s0:
+instance=wlp3s0
+#ADDRESS_FAMILY=inet6?
+color=#00FF00
+interval=10
+
+[iface eth]
+command=$SCRIPT_DIR/iface
+label=enp2s0:
+instance=enp2s0
+#ADDRESS_FAMILY=inet6?
+color=#00FF00
+interval=10
+
+# Docker <3
+[docker]
+command=$SCRIPT_DIR/docker
+command=$SCRIPT_DIR/docker
+color=#0db7ed
+interval=10
+label=~ 
+
+# CPU
+[cpu_usage2]
+command=$SCRIPT_DIR/cpu_usage2
+markup=pango
+interval=persist
+#min_width=CPU 100.00%
+#REFRESH_TIME=1
+#WARN_PERCENT=50
+#CRIT_PERCENT=80
+#DECIMALS=2
+
+[memory]
+command=$SCRIPT_DIR/memory
+label=MEM
+interval=30
+
+
+# Battery
+[battery2]
+command=$SCRIPT_DIR/battery2
+markup=pango
+interval=30
+
+# Update time every 5 seconds
+[time]
+command=date +%b-%d" "%T
+interval=5

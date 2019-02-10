@@ -1,0 +1,12 @@
+{
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "window.zoomLevel": 0,
+    "terminal.integrated.rendererType": "dom",
+    "editor.formatOnSave": true,
+    "editor.fontSize": 15,
+    "python.pythonPath": "/usr/bin/python3"
+}
