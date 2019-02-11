@@ -97,3 +97,4 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 POWERLEVEL9K_DISABLE_RPROMPT=true
+alias config='/usr/bin/git --git-dir=/home/rasmus/.cfg/ --work-tree=/home/rasmus'
