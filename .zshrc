@@ -63,7 +63,11 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+	git
+	zsh-syntax-highlighting
+	zsh-autosuggestions
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -98,3 +102,4 @@ source $ZSH/oh-my-zsh.sh
 
 POWERLEVEL9K_DISABLE_RPROMPT=true
 alias config='/usr/bin/git --git-dir=/home/rasmus/.cfg/ --work-tree=/home/rasmus'
+alias pic='sxiv'
