@@ -64,7 +64,7 @@ IPADDR=$(ip addr show $IF | perl -n -e "/$AF ([^ \/]+).* scope global/ && print 
 #  3) echo -n "$IPADDR" | xclip -i ;;
 #esac
 case $BLOCK_BUTTON in
-  3) st nmtui ;;
+  1) st -c __nmtui  nmtui-connect ;;
 esac
 
 #------------------------------------------------------------------------

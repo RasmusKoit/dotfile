@@ -258,3 +258,7 @@ bindsym Print exec maim -i $(xdotool getactivewindow) | xclip -selection clipboa
 
 for_window [class="__nmtui"] border pixel 1, floating enable
 bindsym $mod+Shift+w exec st -c __nmtui  nmtui-connect
+
+# Hide chrome titlebar
+
+for_window [class="Google-chrome" title=" - Google Chrome$"] border none
