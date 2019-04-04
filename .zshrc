@@ -103,3 +103,5 @@ source $ZSH/oh-my-zsh.sh
 POWERLEVEL9K_DISABLE_RPROMPT=true
 alias config='/usr/bin/git --git-dir=/home/rasmus/.cfg/ --work-tree=/home/rasmus'
 alias pic='sxiv'
+alias eikvpn='sudo sshuttle --dns -x enos.itcollege.ee -e "ssh -i /home/rasmus/.ssh/id_rsa" -HNvr rakoit@enos.itcollege.ee 0.0.0.0/0'
+unsetopt AUTO_CD
